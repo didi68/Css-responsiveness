@@ -1,0 +1,154 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 250px;
+  width: 500px;
+}
+
+.left {
+  width: 600px;
+  float: left;
+}
+
+.left, .right {
+  display: inline-block;
+}
+
+.right {
+  width: 600px;
+  float: right;
+}
+
+/*
+For Mobile devices: 320px-480px
+For Tablets or iPad: 480px - 768px
+For Laptop or small-size screen: 768px -1024px
+For Desktop or large-size screen: 1024px -1200px
+For Extra-large size device: 1200px and more
+*/
+
+/* For Mobile devices: 320px-480px */
+@media (min-width: 320px) and (max-width: 480px) {
+  .left {
+    display: block;
+  }
+
+  .tile-image {
+    width: 250px;
+    height: 150px;
+  }
+
+  .right {
+    display: block;
+    float: none;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  body {
+    margin: 15px;
+  }
+
+  .main {
+    margin: 10px;
+  }
+
+  .card-text {
+    width: 290px;
+  }
+}
+
+/* For Tablets or iPad: 480px-768px */
+@media (min-width: 480px) and (max-width: 768px) {
+  footer {
+    text-align: left;
+  }
+
+  h1 {
+    padding: 25px;
+  }
+}
+
+/* For Laptop or small-size screen: 768px -1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .left {
+    width: 415px;
+    float: none;
+  }
+
+  .right {
+    float: none;
+    width: 400px;
+  }
+
+  .tile-image {
+    width: 425px;
+    height: 200px;
+  }
+
+  h1 {
+    width: 400px;
+    font-size: 50px;
+    left: 0px;
+  }
+
+  body {
+    margin: 10px;
+  }
+}
+
+/* For Desktop or large-size screen: 1024px -1200px */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .left {
+    display: block;
+    width: 70%;
+  }
+
+  .right {
+    display: block;
+    float: none;
+    width: 70%;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  .tile-image {
+    width: 85%;
+  }
+
+  h1 {
+    padding: 1%;
+  }
+
+  .left, .right {
+    font-size: 20px;
+  }
+}
