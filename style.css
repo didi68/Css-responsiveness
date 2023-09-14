@@ -88,6 +88,11 @@ For Extra-large size device: 1200px and more
   h1 {
     padding: 25px;
   }
+
+  .left, .right {
+    float: none;
+    width: fit-content;
+  }
 }
 
 /* For Laptop or small-size screen: 768px -1024px */
